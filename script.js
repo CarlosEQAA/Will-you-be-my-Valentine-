@@ -71,6 +71,8 @@ let messageIndex = 0;
 function handleNoClick() {
     const noButton = document.querySelector('.no-button');
     const yesButton = document.querySelector('.yes-button');
+    const gif = document.querySelector('.gif');
+    gif.src = "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGNvamxqZHFzc3FsMWR6a2VtbnJiamlxY2x4bmhnbmtueGs4bWV4NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GAXXHdS0zXawVLOJLY/giphy.gif";
     noButton.textContent = messages[messageIndex];
     messageIndex = (messageIndex + 1) % messages.length;
     const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
